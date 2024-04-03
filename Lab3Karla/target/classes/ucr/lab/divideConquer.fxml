@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="597.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DivideConquerController">
+   <children>
+      <Pane layoutX="1.0" prefHeight="92.0" prefWidth="874.0" style="-fx-background-color: #f8fcc1;">
+         <children>
+            <Text layoutX="250.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vector Algorithm">
+               <font>
+                  <Font name="Arial" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="1.0" layoutY="85.0" prefHeight="370.0" prefWidth="874.0" style="-fx-background-color: #1693a7;">
+         <children>
+            <TextArea fx:id="textArea" layoutX="7.0" layoutY="66.0" prefHeight="303.0" prefWidth="866.0">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </TextArea>
+            <Text layoutX="43.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vector max size: ">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nTextField" layoutX="293.0" layoutY="8.0" prefHeight="45.0" prefWidth="149.0">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </TextField>
+            <Button layoutX="474.0" layoutY="10.0" mnemonicParsing="false" onAction="#createOnAction" prefHeight="45.0" prefWidth="171.0" text="Create" />
+         </children>
+      </Pane>
+      <Pane fx:id="buttonsPane" disable="true" layoutX="5.0" layoutY="463.0" prefHeight="134.0" prefWidth="874.0">
+         <children>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#fillShowOnAction" prefHeight="46.0" prefWidth="185.0" text="Fill/Show" />
+            <Button layoutX="226.0" layoutY="14.0" mnemonicParsing="false" onAction="#addByValueOnAction" prefHeight="46.0" prefWidth="223.0" text="Add by value" />
+            <Button layoutX="470.0" layoutY="14.0" mnemonicParsing="false" onAction="#addByIndexOnAction" prefHeight="46.0" prefWidth="223.0" text="Add by index" />
+            <Button layoutX="711.0" layoutY="14.0" mnemonicParsing="false" onAction="#sizeOnAction" prefHeight="46.0" prefWidth="149.0" text="Size" />
+            <Button layoutX="14.0" layoutY="74.0" mnemonicParsing="false" onAction="#removeByValueOnAction" prefHeight="46.0" prefWidth="253.0" text="Remove by value" />
+            <Button layoutX="274.0" layoutY="74.0" mnemonicParsing="false" onAction="#removeByIndexOnAction" prefHeight="46.0" prefWidth="253.0" text="Remove by index" />
+            <Button layoutX="533.0" layoutY="74.0" mnemonicParsing="false" onAction="#containsOnAction" prefHeight="46.0" prefWidth="171.0" text="Contains" />
+            <Button layoutX="711.0" layoutY="74.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="46.0" prefWidth="149.0" text="Clear" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
